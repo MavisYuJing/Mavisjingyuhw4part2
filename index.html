@@ -1,0 +1,86 @@
+<!-- 
+    USER NAME:Jing Yu
+    CONTACT:jingu@bu.edu
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+</head>
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-0">form</a></li>
+            <!-- <li><a href="#tabs-2">Proin dolor</a></li>
+            <li><a href="#tabs-3">Aenean lacinia</a></li> -->
+        </ul>
+        <div id="tabs-0">
+            <main>
+                <form class="input_slot" id="input_slot" action="">
+                    <div class="input_item">
+                        <label for="one">Col-Start-Point</label>
+                        <input name="one" id="one" type="number"/>
+                        <div class="slider" id="slider_1"></div> 
+                    </div>
+        
+                    <div class="input_item">
+                        <label for="two">Col-End-Point</label>
+                        <span>
+                            <input name="two" id="two"  type="number"/>
+                        </span>
+                        <div class="slider" id="slider_2"></div> 
+                    </div>
+                    <div class="input_item">
+                        <label for="three">Row-Start-Point</label>
+                        <span>
+                            <input name="three" id="three"  type="number"/>
+                        </span>
+                        <div class="slider" id="slider_3"></div> 
+                    </div>
+                    <div class="input_item">
+                        <label for="four">Row-End-Point</label>
+                        <span>
+                            <input name="four" id='four'  type="number"/>
+                        </span>
+                        <div class="slider" id="slider_4"></div> 
+                    </div>
+                    <div class="alert_slot"></div>
+                    <div>
+                        <input type="submit" value="Submit" class="btn" id="btn"/>
+                        &nbsp;&nbsp;
+                        <input type="button" id="addTab" class="btn" value="AddToTab"/>
+                        &nbsp;&nbsp;
+                        <input type="button" id="CloseOtherTabs" class="btn" value="CloseOtherTabs"/>
+                    </div>
+                </form>
+                
+                <div class="table_slot" id="table_slot">
+                    
+                </div>
+                <div style="display: none;" >
+                    <div class="table_slot" id="_table_slot">
+                    
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- <div id="tabs-2">
+            12
+        </div>
+        <div id="tabs-3">
+            1
+        </div> -->
+    </div>
+    
+   <!-- import part2.js file -->
+    <script src="./part2.js"></script>
+</body>
+</html>
